@@ -30,8 +30,12 @@
 
     <section aria-labelledby="payment-heading">
       <h2 id="payment-heading">Payment Section</h2>
-      <p class="placeholder">Payment controls will appear here.</p>
-      <div id="payment-controls"></div>
+      <form id="payment-controls" novalidate>
+        <label for="cash-amount">Cash amount (₱)</label>
+        <input id="cash-amount" name="cash" type="number" min="0" step="0.01">
+        <button type="submit">Confirm Payment</button>
+      </form>
+      <p id="payment-message" role="status" aria-live="polite"></p>
     </section>
 
     <section aria-labelledby="receipt-heading">
@@ -39,6 +43,7 @@
       <div id="receipt">
         <p class="placeholder">The receipt will appear here.</p>
       </div>
+      <button id="new-transaction" type="button">New Transaction</button>
     </section>
   </main>
 </body>

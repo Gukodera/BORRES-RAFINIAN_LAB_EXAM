@@ -68,8 +68,22 @@ button {
   cursor: pointer;
 }
 
-#cart-items {
+#cart-items,
+#receipt {
   overflow-x: auto;
+}
+
+#payment-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+#cash-amount {
+  width: 140px;
+  padding: 6px;
+  font: inherit;
 }
 
 .cart-table {
