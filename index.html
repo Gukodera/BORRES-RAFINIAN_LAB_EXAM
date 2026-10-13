@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Bakery POS</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Campus Bakery POS</h1>
+  </header>
+
+  <main class="pos-layout">
+    <section aria-labelledby="products-heading">
+      <h2 id="products-heading">Product List</h2>
+      <div id="product-list">
+        <p class="placeholder">Products will appear here.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="cart-heading">
+      <h2 id="cart-heading">Cart / Order Summary</h2>
+      <div id="cart-items">
+        <p class="placeholder">The cart is empty.</p>
+      </div>
+      <p class="total">Total: <span id="order-total">0.00</span></p>
+    </section>
+
+    <section aria-labelledby="payment-heading">
+      <h2 id="payment-heading">Payment Section</h2>
+      <p class="placeholder">Payment controls will appear here.</p>
+      <div id="payment-controls"></div>
+    </section>
+
+    <section aria-labelledby="receipt-heading">
+      <h2 id="receipt-heading">Receipt Section</h2>
+      <div id="receipt">
+        <p class="placeholder">The receipt will appear here.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
