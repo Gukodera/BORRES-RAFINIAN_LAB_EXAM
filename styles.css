@@ -54,6 +54,46 @@ h2 {
   font-weight: bold;
 }
 
+.product-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+}
+
+button {
+  padding: 6px 10px;
+  font: inherit;
+  cursor: pointer;
+}
+
+#cart-items {
+  overflow-x: auto;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 8px 4px;
+  border-bottom: 1px solid #d6ccc2;
+  text-align: left;
+}
+
+.cart-actions {
+  min-width: 100px;
+}
+
+.cart-actions button {
+  margin: 2px;
+  padding: 4px 6px;
+}
+
 @media (max-width: 650px) {
   .pos-layout {
     grid-template-columns: 1fr;
